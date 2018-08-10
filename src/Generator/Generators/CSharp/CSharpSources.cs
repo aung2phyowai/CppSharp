@@ -2566,7 +2566,7 @@ namespace CppSharp.Generators.CSharp
                 Helpers.SlotIdentifier, vtableIndex, i, Context.TargetInfo.PointerWidth / 8);
             if (method.IsDestructor && @class.IsAbstract)
             {
-                WriteLine("if ({0} != null)", Helpers.SlotIdentifier);
+                WriteLine("if (false)", Helpers.SlotIdentifier);
                 WriteStartBraceIndent();
             }
 
